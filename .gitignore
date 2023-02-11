@@ -1,3 +1,4 @@
+Debug/
 # Prerequisites
 *.d
 
@@ -11,6 +12,8 @@
 *.ilk
 *.map
 *.exp
+*.ld
+*.mxproject
 
 # Precompiled Headers
 *.gch

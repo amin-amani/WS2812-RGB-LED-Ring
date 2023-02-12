@@ -27,7 +27,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-#define MAX_LED 8
+#define MAX_LED 24
 #define USE_BRIGHTNESS 1
 #define PI 3.14159265
 
@@ -167,17 +167,24 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  Set_LED(0, 255, 0, 0);
-   Set_LED(1, 0, 255, 0);
-   Set_LED(2, 0, 0, 255);
+  for (int i=0; i<3; i++){
+  Set_LED(8*i+0, 255, 0, 0);
+   Set_LED(8*i+1, 0, 255, 0);
+   Set_LED(8*i+2, 0, 0, 255);
 
-   Set_LED(3, 46, 89, 128);
+   Set_LED(8*i+3, 46, 89, 128);
 
-   Set_LED(4, 156, 233, 100);
-   Set_LED(5, 102, 0, 235);
-   Set_LED(6, 47, 38, 77);
+   Set_LED(8*i+4, 156, 233, 100);
+   Set_LED(8*i+5, 102, 0, 235);
+   Set_LED(8*i+6, 47, 38, 77);
 
-   Set_LED(7, 255, 200, 0);
+   Set_LED(8*i+7, 255, 200, 0);
+}
+
+   ///
+
+
+
   while (1)
   {
 	  for (int i=0; i<46; i++)

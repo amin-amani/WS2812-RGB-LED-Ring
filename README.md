@@ -11,4 +11,10 @@ Ring diameter:    90 mm
 height with led:  4 mm
 PCB thickness:     1.5 mm
 ```
+
+### operation conditions:
+```
+VCC:    5 V
+Data:  3.3 V
+```
 stm32f103RBT6 PA8 as data connected to ws2812 data Input
